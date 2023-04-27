@@ -17,7 +17,7 @@ resource "aws_spot_instance_request" "crawling_spot" {
     key_name = aws_key_pair.key_pair.key_name
     vpc_security_group_ids = [aws_security_group.sg_crawling.id]
     tags = {
-        Name = "crawling_spot"
+        Name = "CrawlingSpot"
     }
 }
 
