@@ -10,7 +10,7 @@ resource "aws_key_pair" "key_pair" {
 
 resource "aws_spot_instance_request" "crawling_spot" {
     ami           = "ami-04cebc8d6c4f297a3" # Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2023-03-25
-    spot_price    = "0.016"
+    spot_price    = "0.020"
     spot_type     = "one-time"
     instance_type = var.spot_instance_type
     instance_interruption_behavior  = "terminate"
