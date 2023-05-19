@@ -1,5 +1,5 @@
 resource "aws_acm_certificate" "example" {
-    provider          = "aws.virginia"
+    provider          = aws.virginia
     domain_name       = var.domain_name
     validation_method = "DNS"
 
@@ -40,7 +40,7 @@ resource "aws_route53_record" "example" {
 }
 
 resource "aws_acm_certificate_validation" "example" {
-    provider                = "aws.virginia"
+    provider                = aws.virginia
     certificate_arn         = aws_acm_certificate.example.arn
     validation_record_fqdns = [for record in aws_route53_record.example : record.fqdn]
 }

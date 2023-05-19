@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "deploy_bucket" {
-    bucket = "s3-bucket-web-deploy"
+    bucket = var.bucket_name
 
     tags = {
         Name        = "terraform-web-deploy"
