@@ -13,8 +13,3 @@ resource "aws_route53_record" "route53_record_a_eb_test" {
         evaluate_target_health = false
     }
 }
-
-output "nameservers" {
-    value = data.aws_route53_zone.route53_host_zone.name_servers
-}
-

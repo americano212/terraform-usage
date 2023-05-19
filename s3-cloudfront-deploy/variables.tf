@@ -1,6 +1,6 @@
 variable "domain_name" {
     type        = string
-    default     = "map.ddakzip.shop"
+    default     = "test.ddakzip.shop"
     description = "Fully domain name to deploy Web services"
 }
 
@@ -12,6 +12,6 @@ variable "validation_domain_name" {
 
 variable "bucket_name" {
     type        = string
-    default     = "s3-bucket-ddakzip-webview-real-estate-map"
+    default     = "s3-bucket-test"
     description = "Bucket name for S3"
 }
