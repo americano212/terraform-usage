@@ -6,7 +6,9 @@
 |----------|------|------|
 | S3+CDN 정적 웹페이지 배포 | [s3-cloudfront-deploy](https://github.com/americano212/terraform-usage/tree/main/s3-cloudfront-deploy) | -------- |
 | 스팟 인스턴스 호출(일회성) | [spot-instance](https://github.com/americano212/terraform-usage/tree/main/spot-instance) | -------- |
-
+| MySQL DB 생성 | [rds-mysql-database]() | -------- |
+| Lambda+API Gateway(REST API) 생성 | [rest-api-lambda-api-gateway]() | -------- |
+| 파일 업로드용 S3 버킷 생성 | [file-upload-s3]() | -------- |
 
 ## 🔨 Guide
 ### 환경변수 세팅
